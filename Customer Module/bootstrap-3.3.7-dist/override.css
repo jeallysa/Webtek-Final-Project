@@ -1,0 +1,13 @@
+.left {
+
+position: absolute;
+    right: 0px;
+    width: 300px;
+}
+
+.right {
+    
+    
+    left: 0px;
+    width: 300px;
+}
