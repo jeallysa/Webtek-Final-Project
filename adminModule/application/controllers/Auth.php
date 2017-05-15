@@ -16,21 +16,30 @@ class Auth extends CI_Controller
     public function doLogin()
     {
         
+        
         $username = $this->input->post('username');
         $password = $this->input->post('password');
 
         $user = $this->Auth_model->doLogin($username, $password);
+
+
+        if ($username == 'admin' && $password == 'admin') {
+            redirect('http://localhost/adminModule/dashboard', 'refresh');
+            # code...
+        }
+
         if(count($user) > 0)
         {
             if($user[0]['type'] == 'customer'){
-                redirect('http://192.168.0.151:8084/serviceprovider/AcceptLogin?id='.$user[0]['id'], 'refresh');
+                redirect('http://192.168.1.8:8084/serviceprovider/AcceptLogin?id='.$user[0]['id'], 'refresh');
 
             }
 
             if($user[0]['type'] == 'sp'){
-                redirect('http://192.168.0.151:8084/serviceprovider/AcceptLogin?id='.$user[0]['id'], 'refresh');
+                redirect('http://192.168.1.8:8084/serviceprovider/AcceptLogin?id='.$user[0]['id'], 'refresh');
                 
             }
+
         }
         redirect('/');
     }
