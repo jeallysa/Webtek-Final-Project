@@ -10,6 +10,7 @@ var conn = mysql.createConnection({
 	host: '192.168.1.56',
 	user: 'root',
 	password: '',
+	database: 'educationaldb';
 
 });
 
