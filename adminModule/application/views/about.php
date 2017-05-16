@@ -9,17 +9,18 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>About Us</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -45,26 +46,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">MyTutorial     </a>
+              <a class="navbar-brand" href="<?php echo base_url(); ?>publichome">MyTutorial</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="public.html">Home</a></li>
-                <li><a href="about_public.html">About</a></li>
+                <li><a href="<?php echo base_url(); ?>publichome">Home</a></li>
+                <li class="active"><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li class="dropdown">
-                  <a href="service_provider.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="about%20us.html">Academics</a></li>
+                  <a href="<?php echo base_url(); ?>service_provider" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                    <li><a href="<?php echo base_url(); ?>service_provider">Academics</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Languages</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Languages</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Instruments</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Instruments</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Cooking or Baking</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Cooking or Baking</a></li>
                   </ul>
                 </li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">LogIn</a></li>
+                <li><a href="<?php echo base_url(); ?>register">Register</a></li>
+                <li><a href="<?php echo base_url(); ?>login">LogIn</a></li>
                 </ul>
             </div>
           </div>
@@ -85,7 +86,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="images/mathf.jpg" alt="First slide">
+          <img class="first-slide" src="<?php echo base_url(); ?>asset/images/mathf.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
@@ -95,7 +96,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="images/scienceq.png" alt="Second slide">
+          <img class="second-slide" src="<?php echo base_url(); ?>asset/images/scienceq.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
@@ -105,7 +106,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="images/Englishq.png" alt="Third slide">
+          <img class="third-slide" src="<?php echo base_url(); ?>asset/images/Englishq.png" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>ANGLICUS</h1>
@@ -141,7 +142,7 @@
           <p class="lead">Invent the potion of Immortality now!</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/sntst.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/sntst.jpg"
         </div>
       </div>
 
@@ -158,7 +159,7 @@
           <p class="lead">Unlock the mystery of the Black Hole!</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/math.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/math.jpg"
         </div>
       </div>
 
@@ -170,7 +171,7 @@
           <p class="lead">We need you! Grammar Police</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/tutor.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/tutor.jpg"
         </div>
       </div>
 
@@ -180,8 +181,8 @@
           <h2 class="featurette-heading">Cooking<span class="text-muted">.</span></h2>
           <p class="lead">A RECIPE has no SOUL YOU as the COOK must bring SOUL to the RECIPE!</p>
         </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/cook.jpg"
+        <div class="  col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/cook.jpg"
         </div>
       </div>
 
@@ -202,11 +203,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>asset/
+    js/jquery.min.js"><\/script>')</script>
+    <script src="<?php echo base_url(); ?>asset/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Service Providers</title>
+    <title>Customers</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -113,7 +113,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Service Provider</h1>
+                    <h1 class="page-header">Service Providers</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -122,13 +122,13 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            List of Service Provider
+                            List of Service Providers
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
-                                        <tr>
+                                    <tr>
                                             <th>SP ID</th>
                                             <th>Username</th>
                                             <th>First name</th>
@@ -140,13 +140,12 @@
                                             <th>Address</th>
                                             <th>Birthdate</th>
                                             <th>Password</th>
-                                        </tr>
-                                    </thead>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <?php
                                         foreach($record AS $key => $value)
                                         {?>
-                          
-                                        <tbody>
                                             <tr>
                                                 <td><?php echo $value->spID; ?></td>
                                                 <td><?php echo $value->Username; ?></td>
@@ -159,10 +158,9 @@
                                                 <td><?php echo $value->Address; ?></td>
                                                 <td><?php echo $value->Birthdate; ?></td>
                                                 <td><?php echo $value->Password; ?></td>
-
                                             </tr>
                                         <?php } ?>
-                           
+                                   
                                 </tbody>
                             </table>
                         </div>

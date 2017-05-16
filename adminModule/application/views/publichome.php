@@ -1,41 +1,35 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)http://getbootstrap.com/examples/carousel/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
-    <title>Home</title>
+    <title>Public Page Home</title>
 
-
-  <link   rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link href="bootstrap/css/carousel.css" rel="stylesheet">
-
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="<?php echo base_url(); ?>asset/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  
-    <script src="./Carousel Template for Bootstrap_files/ie-emulation-modes-warning.js.download"></script>
+    <script src="<?php echo base_url(); ?>asset/js/ie-emulation-modes-warning.js"></script>
 
-    
-   
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url(); ?>asset/css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -52,26 +46,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="      ">MyTutorial</a>
+              <a class="navbar-brand" href="<?php echo base_url(); ?>publichome">MyTutorial</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="public.html">Home</a></li>
-                <li><a href="about_public.html">About</a></li>
+                <li class="active"><a href="<?php echo base_url(); ?>publichome">Home</a></li>
+                <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li class="dropdown">
-                  <a href="about%20us.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="about%20us.html">Academics</a></li>
+                   <a href="<?php echo base_url(); ?>service_provider" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                    <li><a href="<?php echo base_url(); ?>service_provider">Academics</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Languages</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Languages</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Instruments</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Instruments</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Cooking or Baking</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Cooking or Baking</a></li>
                   </ul>
                 </li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">LogIn</a></li>
+                <li><a href="<?php echo base_url(); ?>register">Register</a></li>
+                <li><a href="<?php echo base_url(); ?>login">LogIn</a></li>
                 </ul>
             </div>
           </div>
@@ -84,51 +78,49 @@
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item">
-          <img class="first-slide" src="images/mathf.jpg" alt="First slide">
+        <div class="item active">
+          <img class="first-slide" src="<?php echo base_url(); ?>asset/images/mathf.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
-             <p>Mathematics may not teach us how to add LOVE or how to minus Hate. But It gives us every REASON to HOPE that every PROBLEM has a SOLUTION.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Sign up today</a></p>
+              <p>Mathematics may not teach us how to add LOVE or how to minus Hate. But It gives us every REASON to HOPE that every PROBLEM has a SOLUTION.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="images/Englishq.png" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>ANGLICUS</h1>
-              <p>The MORE that you READ, the more THINGS you will KNOW. The MORE you LEARN the more PLACES you'll GO.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item active">
-          <img class="third-slide" src="images/scienceq.png" alt="Third slide">
+          <img class="second-slide" src="<?php echo base_url(); ?>asset/images/scienceq.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
               <p>SCIENCE is the key to our FUTURE and if you don't belive in SCIENCE, then you're holding EVERYBODY back.</p>
-              <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/examples/carousel/#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
-
+        <div class="item">
+          <img class="third-slide" src="<?php echo base_url(); ?>asset/images/Englishq.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>ANGLICUS</h1>
+              <p>The MORE that you READ, the more THINGS you will KNOW. The MORE you LEARN the more PLACES you'll GO.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
       </div>
-      <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -141,11 +133,8 @@
 
     <div class="container marketing">
 
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
+      <!-- Three columns of text below the carousel -->
+       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -153,7 +142,7 @@
           <p class="lead">Invent the potion of Immortality now!</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/sntst.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/sntst.jpg"
         </div>
       </div>
 
@@ -170,7 +159,7 @@
           <p class="lead">Unlock the mystery of the Black Hole!</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/math.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/math.jpg"
         </div>
       </div>
 
@@ -182,7 +171,7 @@
           <p class="lead">We need you! Grammar Police</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/tutor.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/tutor.jpg"
         </div>
       </div>
 
@@ -192,22 +181,19 @@
           <h2 class="featurette-heading">Cooking<span class="text-muted">.</span></h2>
           <p class="lead">A RECIPE has no SOUL YOU as the COOK must bring SOUL to the RECIPE!</p>
         </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/cook.jpg"
+        <div class="  col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/cook.jpg"
         </div>
       </div>
 
-     
-
-
+ <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="Carousel Template for Bootstrap.html">Back to top</a></p>
-
-        <p>© 2017 Company, Inc. · <a href="     ">Privacy</a> · <a href="   ">Terms</a></p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -216,13 +202,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Carousel Template for Bootstrap_files/jquery.min.js.download"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js.download"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>asset/
+    js/jquery.min.js"><\/script>')</script>
+    <script src="<?php echo base_url(); ?>asset/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="./Carousel Template for Bootstrap_files/holder.min.js.download"></script>
+    <script src="<?php echo base_url(); ?>asset/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.js.download"></script>
-  
-
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body></html>
+    <script src="<?php echo base_url(); ?>asset/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

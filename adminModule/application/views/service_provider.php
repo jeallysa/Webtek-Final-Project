@@ -9,17 +9,18 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Servoce Providers</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +29,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>asset/css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -45,26 +46,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">MyTutorial</a>
+              <a class="navbar-brand" href="<?php echo base_url(); ?>publichome">MyTutorial</a>
             </div>
-             <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="public.html">Home</a></li>
-                <li><a href="about_public.html">About</a></li>
+                <li><a href="<?php echo base_url(); ?>publichome">Home</a></li>
+                <li><a href="<?php echo base_url(); ?>about">About</a></li>
                 <li class="active" class="dropdown">
-                  <a href="about%20us.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="about%20us.html">Academics</a></li>
+                  <a href="<?php echo base_url(); ?>service_provider" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                    <li><a href="<?php echo base_url(); ?>service_provider">Academics</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Languages</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Languages</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Instruments</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Instruments</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="about%20us.html">Cooking or Baking</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider">Cooking or Baking</a></li>
                   </ul>
                 </li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">LogIn</a></li>
+                <li><a href="<?php echo base_url(); ?>register">Register</a></li>
+                <li><a href="<?php echo base_url(); ?>login">LogIn</a></li>
                 </ul>
             </div>
           </div>
@@ -85,7 +86,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item">
-          <img class="first-slide" src="images/mathf.jpg" alt="First slide">
+          <img class="first-slide" src="<?php echo base_url(); ?>asset/images/mathf.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
@@ -95,7 +96,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="images/scienceq.png" alt="Second slide">
+          <img class="second-slide" src="<?php echo base_url(); ?>asset/images/scienceq.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
@@ -105,7 +106,7 @@
           </div>
         </div>
         <div class="item active">
-          <img class="third-slide" src="images/Englishq.png" alt="Third slide">
+          <img class="third-slide" src="<?php echo base_url(); ?>asset/images/Englishq.png" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>ANGLICUS</h1>
@@ -137,14 +138,14 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Nathan Calimlim <span class="text-muted">.</span></h2>
-          
+          <h2 class="featurette-heading">Nathan Calimlim<span class="text-muted">.</span></h2>
+          <h1>Math Teacher</h1>
           <p class="lead">Educating the mind without educating the heart is no education at all.
                           </p>
-          <p><a class="btn btn-lg btn-primary" href="    " role="button">Hire</a></p>
+          <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>login" role="button">Hire</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/nathan1.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="<?php echo base_url(); ?>asset/holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/nathan1.jpg"
         </div>
       </div>
 
@@ -158,13 +159,14 @@
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Rommel Arciosa<span class="text-muted">.</span></h2>
+          <h1>Nihongo Tutor</h1>
           <p class="lead"> Your work is going to fill large part of your life, and the only way to be truly satisfied is to do what you believe is great work.
           And the only way to do great work is to love what you do. IF you haven't found it yet, keep looking.Don't settle. As with all maters of the heartm you'll know when you find it. And,like any great relationship,It just gets better and better as the years roll on. SO KEEP LOOKING UNTIL YOU FIND IT. DON'T SETTLE.
                           </p>
-        <p><a class="btn btn-lg btn-primary" href="    " role="button">Hire</a></p>
+        <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>login" role="button">Hire</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/mel1.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="<?php echo base_url(); ?>asset/holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/mel1.jpg"
         </div>
       </div>
 
@@ -173,13 +175,14 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Paul Ian Quezada<span class="text-muted">.</span></h2>
+          <h1>Piano Instructor</h1>
           <p class="lead">You laugh, You cry, and You work Harder than you thought you could. Somedays you're trying and somedays you're just trying to make 
           it through the day. Your wallet is empty, Your heart is empty, your mind is packed with memories of kids who have change your life.
                           </p> 
-          <p><a class="btn btn-lg btn-primary" href="    " role="button">Hire</a></p> 
+          <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>login" role="button">Hire</a></p> 
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/ian2.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="<?php echo base_url(); ?>asset/holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/ian2.jpg"
         </div>
       </div>
 
@@ -187,12 +190,13 @@
      <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Aver Maslian<span class="text-muted">.</span></h2>
+          <h1>Chef mentor</h1>
           <p class="lead">It is my job to help all my student belong... This mean part my job is to educate the wider community about the needs of a child
             who may be preceived as 'different' to help them become embraced as part of the community.</p>
-          <p><a class="btn btn-lg btn-primary" href="    " role="button">Hire</a></p>
+          <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>login" role="button">Hire</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="images/avery.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="<?php echo base_url(); ?>asset/holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/avery.jpg"
         </div>
       </div>
  <hr class="featurette-divider">s
@@ -202,7 +206,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Group 3, Webtek Lab. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -212,11 +216,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>asset/
+    js/jquery.min.js"><\/script>')</script>
+    <script src="<?php echo base_url(); ?>asset/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="<?php echo base_url(); ?>asset/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
