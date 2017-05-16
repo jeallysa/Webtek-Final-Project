@@ -91,7 +91,7 @@
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
               <p>Mathematics may not teach us how to add LOVE or how to minus Hate. But It gives us every REASON to HOPE that every PROBLEM has a SOLUTION.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>register" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
               <p>SCIENCE is the key to our FUTURE and if you don't belive in SCIENCE, then you're holding EVERYBODY back.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>about" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -188,12 +188,12 @@
 
  <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
-
+<br>
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy;2017 Group 3, Webtek Lab.&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->

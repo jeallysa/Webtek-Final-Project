@@ -146,7 +146,7 @@ class Auth extends CI_Controller
                 $this->db->insert('customer',$data);
             }
                 
-                $this->session->set_flashdata("success","Your account has been registered. You can login now");
+                $this->session->set_flashdata("success","Your registration request has been sent, wait for the admin to approve your request in less than 24 hours");
                 redirect ("auth/register", "refresh");
                 
             }

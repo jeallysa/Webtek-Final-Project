@@ -91,7 +91,7 @@
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
               <p>Mathematics may not teach us how to add LOVE or how to minus Hate. But It gives us every REASON to HOPE that every PROBLEM has a SOLUTION.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>register" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
               <p>SCIENCE is the key to our FUTURE and if you don't belive in SCIENCE, then you're holding EVERYBODY back.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>about" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -134,15 +134,15 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-       <hr class="featurette-divider">
+       <!-- <hr class="featurette-divider"> -->
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Science<span class="text-muted">.</span></h2>
-          <p class="lead">Invent the potion of Immortality now!</p>
+        <div class="col-md-11">
+          <h2 class="featurette-heading">About Us<span class="text-muted">.</span></h2>
+          <p class="lead">Our Goal As Students Of Saint Louis University in the purpose of creating this website is to Encourage student to spend time on enhancing their skills Specially in MATHEMATICUS , SCIENTIA , ANGLICUS by doing so it will help students to learn in advance and have an advantage in their academic life also this will enable students to enhance their studying Habits , most of the the students tend to use the Internet more so this website can help them achieve the learning satisfactory they wanted because we have trained tutors that will help them , this tutors are capable of teaching the in their maximum potential easy to approach and very capable letting the student understand the specific category he/she had choosen may this website be a guide to all the students out who wants to learn and be the best among profesionals.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/sntst.jpg"
+        <div class="col-lg-5 col-lg-offset-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/1.jpg"
         </div>
       </div>
 
@@ -155,11 +155,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Mathematics<span class="text-muted">.</span></h2>
-          <p class="lead">Unlock the mystery of the Black Hole!</p>
+          <h2 class="featurette-heading">Purpose<span class="text-muted">.</span></h2>
+          <p class="lead">As we all know education has a very great impact in our lives with that said not all people are capable of affording education . So we had this idea to create a website that will teach people interested in learning to have a chance to contribute in our society this website enable people to enhance skills in different categories which will enable them to apply in the real world this website will give them the opportunity to educate themselves .</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/math.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/2.jpg"
         </div>
       </div>
 
@@ -167,37 +167,31 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">English<span class="text-muted">.</span></h2>
-          <p class="lead">We need you! Grammar Police</p>
+          <h2 class="featurette-heading">Our Vision<span class="text-muted">.</span></h2>
+          <p class="lead">We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation. As a E-learner-centered public institution, this Website continuously improves itself to better serve its stakeholders.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/tutor.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/3.jpg"
         </div>
       </div>
 
       <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Cooking<span class="text-muted">.</span></h2>
-          <p class="lead">A RECIPE has no SOUL YOU as the COOK must bring SOUL to the RECIPE!</p>
+          <h2 class="featurette-heading">Our Mission<span class="text-muted">.</span></h2>
+          <p class="lead">To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where: Students learn in a child-friendly, gender-sensitive, safe, and motivating environment. Teachers facilitate learning and constantly nurture every learner. Administrators and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen. Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p>
         </div>
         <div class="  col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/cook.jpg"
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="<?php echo base_url(); ?>asset/images/4.jpg"
         </div>
       </div>
+
 
  <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

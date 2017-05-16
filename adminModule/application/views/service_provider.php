@@ -55,13 +55,13 @@
                 <li class="active" class="dropdown">
                   <a href="<?php echo base_url(); ?>service_provider" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service Provider <span class="caret"></span></a>
                    <ul class="dropdown-menu">
-                    <li><a href="<?php echo base_url(); ?>service_provider">Academics</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider#academ">Academics</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="<?php echo base_url(); ?>service_provider">Languages</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider#lang">Languages</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="<?php echo base_url(); ?>service_provider">Instruments</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider#ins">Instruments</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="<?php echo base_url(); ?>service_provider">Cooking or Baking</a></li>
+                    <li><a href="<?php echo base_url(); ?>service_provider#cook">Cooking or Baking</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo base_url(); ?>register">Register</a></li>
@@ -84,14 +84,14 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox">      
         <div class="item">
           <img class="first-slide" src="<?php echo base_url(); ?>asset/images/mathf.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>MATHEMATICUS</h1>
               <p>Mathematics may not teach us how to add LOVE or how to minus Hate. But It gives us every REASON to HOPE that every PROBLEM has a SOLUTION.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>register" role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
             <div class="carousel-caption">
               <h1>SCIENTIA</h1>
               <p>SCIENCE is the key to our FUTURE and if you don't belive in SCIENCE, then you're holding EVERYBODY back.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo base_url(); ?>about" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
